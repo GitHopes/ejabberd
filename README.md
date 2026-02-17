@@ -4,6 +4,10 @@ Para instalar dependencias (tkinter, xvfb) y correr.
 ```bash
 make
 ```
+Solo instalar dependencias (tkinter, xvfb).
+```bash
+make install-deps
+```
 Para correr el script.
 ```bash
 make run
