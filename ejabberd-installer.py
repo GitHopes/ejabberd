@@ -697,7 +697,7 @@ class CLIInstaller:
 
     def _step_systemd(self, p: dict):
         """Crea y activa el servicio systemd."""
-        self.log_msg("━━━  PASO 7: Servicio systemd  ━━━", "section")
+        self.log_msg("━━━  PASO 8: Servicio systemd  ━━━", "section")
         unit = textwrap.dedent("""\
             [Unit]
             Description=ejabberd XMPP Server
@@ -732,7 +732,7 @@ class CLIInstaller:
 
     def _step_permissions(self, p: dict):
         """Ajusta propietarios y permisos."""
-        self.log_msg("━━━  PASO 8: Permisos y propietarios  ━━━", "section")
+        self.log_msg("━━━  PASO 7: Permisos y propietarios  ━━━", "section")
         cmds = [
             "sudo chown -R ejabberd:ejabberd /usr/local/ejabberd",
             "sudo mkdir -p /var/lib/ejabberd",
@@ -1401,7 +1401,7 @@ if HAS_GUI:
 
         def _step_systemd(self, p: dict):
             """Crea y activa el servicio systemd."""
-            self.log_msg("━━━  PASO 7: Servicio systemd  ━━━", "section")
+            self.log_msg("━━━  PASO 8: Servicio systemd  ━━━", "section")
             unit = textwrap.dedent("""\
                 [Unit]
                 Description=ejabberd XMPP Server
@@ -1436,7 +1436,7 @@ if HAS_GUI:
 
         def _step_permissions(self, p: dict):
             """Ajusta propietarios y permisos."""
-            self.log_msg("━━━  PASO 8: Permisos y propietarios  ━━━", "section")
+            self.log_msg("━━━  PASO 7: Permisos y propietarios  ━━━", "section")
             cmds = [
                 "sudo chown -R ejabberd:ejabberd /usr/local/ejabberd",
                 "sudo mkdir -p /var/lib/ejabberd",
